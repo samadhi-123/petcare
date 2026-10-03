@@ -1,6 +1,6 @@
-package com.petcare;
+package view;
 
-import com.petcare.Doctor;
+import view.Doctor;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -225,66 +225,38 @@ public class Login1 extends javax.swing.JFrame {
         {
             try
             {
-                 //create database connection
-                java.sql.Connection con = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-                //create a query
-                String sql = "SELECT *FROM register_tbl WHERE UserName=? AND Password=? AND Role=?  ";
-                java.sql.PreparedStatement pst = con.prepareStatement(sql);
+                controller.LoginController ctrl = new controller.LoginController();
+                java.sql.ResultSet rs = ctrl.loginUser(UserName, Password, Role);
                 
-                pst.setString(1, UserName);
-                pst.setString(2, Password);
-                pst.setString(3, Role);
-                
-                // Execute the query
-                java.sql.ResultSet rs = pst.executeQuery();
-                
-                //cheak the role
-                if(rs.next())
-                {
+                if (rs != null && rs.next()) {
                     javax.swing.JOptionPane.showMessageDialog(this, "Login successful!");
                     
-                    if(Role.equalsIgnoreCase("Staff"))
-                    {
-                        staff s = new staff();
-                        s.setVisible(true);
-                        this.setVisible(false);
-                    }
-                    else if (Role.equalsIgnoreCase("Manager"))
-                    {
-                        Manager m = new Manager();
-                        m.setVisible(true);
-                        this.setVisible(false);
-                    }
-                    else if (Role.equalsIgnoreCase("Doctor"))
-                    {
-                        Doctor d = new Doctor();
-                        d.setVisible(true);
-                        this.setVisible(false);
+                    if (Role.equalsIgnoreCase("Staff")) {
+                        ctrl.openStaff();
+                    } else if (Role.equalsIgnoreCase("Manager")) {
+                        ctrl.openManager();
+                    } else if (Role.equalsIgnoreCase("Doctor")) {
+                        ctrl.openDoctor();
                     }
                     
                     this.dispose();
-                    
-                        
-                        
                 }
-                else
+                
+                else 
                 {
                     javax.swing.JOptionPane.showMessageDialog(this, "Invalid username & Password");
                 }
-                
-                con.close();
             }
             
-            
-            catch(Exception e)
+            catch (Exception e) 
             {
-                javax.swing.JOptionPane.showMessageDialog(this, "Database error"+ e.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
-            
+                javax.swing.JOptionPane.showMessageDialog(this, "Database error " + e.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+                        
             }
-        }
             
-        
-        
+            
+        }
+           
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -293,15 +265,15 @@ public class Login1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      home1 h = new home1();
-      h.setVisible(true);
-      this.setVisible(false);
+    controller.LoginController ctrl = new controller.LoginController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        this.setVisible(false);
-        home1 h1 = new home1 ();
-        h1.setVisible(true);
+       controller.LoginController ctrl = new controller.LoginController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
