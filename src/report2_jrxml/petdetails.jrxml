@@ -1,0 +1,113 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="petdetails" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b6cdbfa8-07c6-4b38-b9dd-668aa1afc5fc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (15)"/>
+	<query language="SQL"><![CDATA[SELECT * FROM pet_register]]></query>
+	<field name="OwnerId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OwnerId"/>
+		<property name="com.jaspersoft.studio.field.label" value="OwnerId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="ownerName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ownerName"/>
+		<property name="com.jaspersoft.studio.field.label" value="ownerName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="OwnerTel" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OwnerTel"/>
+		<property name="com.jaspersoft.studio.field.label" value="OwnerTel"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="PetName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PetName"/>
+		<property name="com.jaspersoft.studio.field.label" value="PetName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="PetAge" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PetAge"/>
+		<property name="com.jaspersoft.studio.field.label" value="PetAge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<field name="Breed" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Breed"/>
+		<property name="com.jaspersoft.studio.field.label" value="Breed"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pet_register"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="54f7affb-4dad-44ea-8b04-dbe3c72631b1" x="200" y="30" width="140" height="30">
+			<text><![CDATA[Pets & owner Details]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="48" splitType="Stretch">
+		<element kind="staticText" uuid="3c14fb09-5c71-47fd-b549-f937865e59ca" x="-10" y="0" width="60" height="30">
+			<text><![CDATA[OwnerId]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96172932-a52d-4112-bc20-a48964c52216"/>
+		</element>
+		<element kind="staticText" uuid="36084d2a-b87e-46ad-a82a-6a9fd760c9fa" x="50" y="0" width="100" height="30">
+			<text><![CDATA[ownerName]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29609dec-8b13-47d5-b88b-f30d27d4c6f8"/>
+		</element>
+		<element kind="staticText" uuid="805a77ed-829e-4e71-b978-044deeafc69a" x="150" y="0" width="100" height="30">
+			<text><![CDATA[OwnerTel]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="78277722-d78b-4dd2-8477-680034563a2c"/>
+		</element>
+		<element kind="staticText" uuid="822a7f9e-0ec0-4db7-9302-ec6b3202a159" x="250" y="0" width="80" height="30">
+			<text><![CDATA[PetName]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c5f1553d-6e9f-459e-b334-c34e9091ef20"/>
+		</element>
+		<element kind="staticText" uuid="ed29249c-314d-4f48-bb7a-3bf386c83fea" x="350" y="0" width="60" height="30">
+			<text><![CDATA[PetAge]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a864cce-2c64-4275-a5d0-51326760b7b3"/>
+		</element>
+		<element kind="staticText" uuid="13aa23d1-6060-4783-91fa-4478729ba42d" x="425" y="0" width="55" height="30">
+			<text><![CDATA[Gender]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d73903e8-38e6-4295-b9e0-bbef9926d8d0"/>
+		</element>
+		<element kind="staticText" uuid="ce387a15-9f76-441e-b6a8-7602e66847c4" x="490" y="0" width="60" height="30">
+			<text><![CDATA[Breed]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6437b2e-41cd-45f7-93ba-e7bc3c61d47c"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<element kind="textField" uuid="fb823da2-13c4-4ccc-80d3-785f93635d36" x="-10" y="0" width="60" height="30">
+				<expression><![CDATA[$F{OwnerId}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96172932-a52d-4112-bc20-a48964c52216"/>
+			</element>
+			<element kind="textField" uuid="d3d311a8-91f1-4c49-8df8-b2c81dd37b0c" x="50" y="0" width="100" height="30">
+				<expression><![CDATA[$F{ownerName}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29609dec-8b13-47d5-b88b-f30d27d4c6f8"/>
+			</element>
+			<element kind="textField" uuid="c40fbb44-03d7-4d49-9bf4-a2d15f96202e" x="150" y="0" width="100" height="30">
+				<expression><![CDATA[$F{OwnerTel}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="78277722-d78b-4dd2-8477-680034563a2c"/>
+			</element>
+			<element kind="textField" uuid="3206da49-ddd4-4b8e-a2f5-29362a396269" x="250" y="0" width="80" height="30">
+				<expression><![CDATA[$F{PetName}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c5f1553d-6e9f-459e-b334-c34e9091ef20"/>
+			</element>
+			<element kind="textField" uuid="85c3a35f-0c24-4c56-848c-7f5ae19b04e8" x="350" y="0" width="60" height="30">
+				<expression><![CDATA[$F{PetAge}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a864cce-2c64-4275-a5d0-51326760b7b3"/>
+			</element>
+			<element kind="textField" uuid="0cc57627-d5d5-4df6-8446-48f4e0fa3ff9" x="420" y="0" width="60" height="30">
+				<expression><![CDATA[$F{Gender}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d73903e8-38e6-4295-b9e0-bbef9926d8d0"/>
+			</element>
+			<element kind="textField" uuid="97e3565d-1929-4714-9272-92745e0c0e50" x="490" y="0" width="60" height="30">
+				<expression><![CDATA[$F{Breed}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6437b2e-41cd-45f7-93ba-e7bc3c61d47c"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

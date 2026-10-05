@@ -1,8 +1,7 @@
-package com.petcare;
+package view;
 
 
-import com.petcare.Register1;
-import com.petcare.Login1;
+import view.Login1;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -131,15 +130,15 @@ public class home1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Login1 l = new Login1 ();
-        l.setVisible(true);
-        this.setVisible(false);
+      controller.HomeController ctrl = new controller.HomeController();
+        ctrl.openLogin();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Register1 r = new Register1();
-        r.setVisible(true);
-        this.setVisible(false);
+        controller.HomeController ctrl = new controller.HomeController();
+        ctrl.openRegister();
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

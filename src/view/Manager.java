@@ -1,7 +1,8 @@
-package com.petcare;
+package view;
 
 
-import com.petcare.Login1;
+import view.home1;
+import view.Login1;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -284,9 +285,9 @@ public class Manager extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.setVisible(false);
-        Login1 l = new Login1 ();
-        l.setVisible(true);
+        controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -296,40 +297,40 @@ public class Manager extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        this.setVisible(false);
-        home1 h1 = new home1 ();
-        h1.setVisible(true);
+       controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openLogin();
+        this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-       this.setVisible(false);
-     mreport mr = new mreport();
-     mr.setVisible(true);
+     controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openMReport();
+        this.dispose();
        
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        home1 h1 = new home1();
-        h1.setVisible(true);
-        this.setVisible(false);
+       controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        TimeFrame tf = new TimeFrame();
-       tf.setVisible(true);
-       this.setVisible(false);
+      controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openTimeFrame();
+        this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        payment_page pp = new payment_page();
-       pp.setVisible(true);
-       this.setVisible(false);
+      controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openPaymentPage();
+        this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        employee e = new employee();
-        e.setVisible(true);
-        this.setVisible(false);
+       controller.ManagerController ctrl = new controller.ManagerController();
+        ctrl.openEmployee();
+        this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**

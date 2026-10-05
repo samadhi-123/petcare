@@ -1,0 +1,100 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="payement1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4d99bab-993d-4555-88c3-35b691519eed">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (16)"/>
+	<query language="SQL"><![CDATA[SELECT * FROM register_tbl]]></query>
+	<field name="UserId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="UserId"/>
+		<property name="com.jaspersoft.studio.field.label" value="UserId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<field name="username" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="username"/>
+		<property name="com.jaspersoft.studio.field.label" value="username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Address"/>
+		<property name="com.jaspersoft.studio.field.label" value="Address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<field name="PhoneNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PhoneNo"/>
+		<property name="com.jaspersoft.studio.field.label" value="PhoneNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Password"/>
+		<property name="com.jaspersoft.studio.field.label" value="Password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<field name="Role" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Role"/>
+		<property name="com.jaspersoft.studio.field.label" value="Role"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="register_tbl"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="305deb08-6fdf-43ed-bca2-8a5a42e4750a" x="213" y="38" width="100" height="30">
+			<text><![CDATA[Employee Details]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="42" splitType="Stretch">
+		<element kind="staticText" uuid="99be1675-6eee-4d4a-b08e-65c4db49a26f" x="-10" y="0" width="60" height="30">
+			<text><![CDATA[UserId]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b330a8d8-2442-4eac-b3e9-5c02e4bde4b1"/>
+		</element>
+		<element kind="staticText" uuid="de13489c-7220-4471-a58e-b102087949c6" x="60" y="0" width="80" height="30">
+			<text><![CDATA[username]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d932f37e-4f21-4945-832f-a373578dd88b"/>
+		</element>
+		<element kind="staticText" uuid="78a6d9f7-fb29-4545-bb69-25e0d0564fb5" x="150" y="0" width="80" height="30">
+			<text><![CDATA[Address]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a21b5f2f-de7e-4cac-aaeb-d6a37535d793"/>
+		</element>
+		<element kind="staticText" uuid="bfa872cc-f7c9-4ee3-aee2-a58fc9eb3516" x="241" y="0" width="100" height="30">
+			<text><![CDATA[PhoneNo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee9236c9-0072-488e-bdfc-e5b873c8133a"/>
+		</element>
+		<element kind="staticText" uuid="4555b73f-9553-459c-b61c-b91c0934acad" x="350" y="0" width="90" height="30">
+			<text><![CDATA[Password]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e1659e4c-0085-499d-ae7e-3ab8e4e76ef9"/>
+		</element>
+		<element kind="staticText" uuid="325076bc-1887-4fa8-9bce-aa9740e2d279" x="450" y="0" width="100" height="30">
+			<text><![CDATA[Role]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e259c57a-6c7b-4fb4-a12e-31ba5c99139d"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<element kind="textField" uuid="86775a1a-e091-4ba4-98b6-25e74573ba44" x="-10" y="0" width="60" height="30">
+				<expression><![CDATA[$F{UserId}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b330a8d8-2442-4eac-b3e9-5c02e4bde4b1"/>
+			</element>
+			<element kind="textField" uuid="17139cfb-0714-4a45-936b-b2fc1594fe8c" x="60" y="0" width="80" height="30">
+				<expression><![CDATA[$F{username}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d932f37e-4f21-4945-832f-a373578dd88b"/>
+			</element>
+			<element kind="textField" uuid="c6db023b-5788-46d6-9456-0b52704897a3" x="150" y="0" width="80" height="30">
+				<expression><![CDATA[$F{Address}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a21b5f2f-de7e-4cac-aaeb-d6a37535d793"/>
+			</element>
+			<element kind="textField" uuid="77c07a00-6ea7-4d3a-86dd-8d70a0270d36" x="241" y="0" width="100" height="30">
+				<expression><![CDATA[$F{PhoneNo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee9236c9-0072-488e-bdfc-e5b873c8133a"/>
+			</element>
+			<element kind="textField" uuid="adf96032-1ce6-4dbb-b7f8-283fa91a0238" x="350" y="0" width="90" height="30">
+				<expression><![CDATA[$F{Password}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e1659e4c-0085-499d-ae7e-3ab8e4e76ef9"/>
+			</element>
+			<element kind="textField" uuid="585ce2f6-803c-4ce1-b38b-a3c6ff4ec225" x="450" y="0" width="100" height="30">
+				<expression><![CDATA[$F{Role}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e259c57a-6c7b-4fb4-a12e-31ba5c99139d"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

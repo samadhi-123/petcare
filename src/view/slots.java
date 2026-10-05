@@ -1,4 +1,4 @@
-package com.petcare;
+package view;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -7,7 +7,7 @@ package com.petcare;
 
 
 
-import com.petcare.Doctor;
+import view.Doctor;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -60,6 +60,9 @@ public class slots extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -352,39 +355,75 @@ public class slots extends javax.swing.JFrame {
                     .addComponent(jButton6)
                     .addComponent(jButton4)
                     .addComponent(jButton2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
+        );
+
+        jPanel5.setBackground(new java.awt.Color(204, 0, 102));
+
+        jLabel14.setFont(new java.awt.Font("Perpetua Titling MT", 1, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("PET CARE AND VETERINARY SERVICES SECTOR");
+
+        jButton8.setBackground(new java.awt.Color(219, 36, 100));
+        jButton8.setFont(new java.awt.Font("Constantia", 1, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("LogOut");
+        jButton8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 4));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(76, 76, 76)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(317, 317, 317)
+                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 24, Short.MAX_VALUE))))
+                        .addGap(24, 24, 24)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 36, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(58, Short.MAX_VALUE)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(56, 56, 56))
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(87, 87, 87))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -395,15 +434,15 @@ public class slots extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 677, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.setVisible(false);
-        Doctor d = new Doctor ();
+       this.setVisible(false);
+        view.Doctor d = new view.Doctor();
         d.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -458,36 +497,26 @@ public class slots extends javax.swing.JFrame {
        {
            String doctorId = jTextField1.getText();
            
-           if(doctorId.isEmpty())
-           {
-                JOptionPane.showMessageDialog(this, "Please enter or select a Doctor ID to delete!");
+           if(doctorId.isEmpty()) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Please enter or select a Doctor ID to delete!");
                 return;
            }
+            controller.SlotsController ctrl = new controller.SlotsController();
+            boolean success = ctrl.deleteTime(doctorId);
            
-           Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-           String query = "DELETE FROM doctor_time_table1 WHERE `Doctor_Id`=?";
-    
-            PreparedStatement pst = con.prepareStatement(query);
-            pst.setString(1, doctorId);
+            if(success) {
+               javax.swing.JOptionPane.showMessageDialog(this, "Doctor time deleted successfully from Database!");
+               javax.swing.table.DefaultTableModel model = (javax.swing.table.DefaultTableModel) jTable1.getModel();
+               model.setRowCount(0); 
+           }
+            else {
+               javax.swing.JOptionPane.showMessageDialog(this, "No record found with this Doctor ID!");
+           }
             
-            int rowsDeleted = pst.executeUpdate();
-            
-            if(rowsDeleted > 0)
-            {
-                JOptionPane.showMessageDialog(this, "Doctor time deleted successfully from Database!");
-        
-        
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                model.setRowCount(0); 
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(this, "No record found with this Doctor ID!");
-            }
        }
        catch(Exception e)
        {
-           JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+          javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
        }
       
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -508,31 +537,24 @@ public class slots extends javax.swing.JFrame {
             String leaveTime = jComboBox6.getSelectedItem().toString();
             String specialist = jComboBox7.getSelectedItem().toString();
             
-           Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-           String query = "INSERT INTO doctor_time_table1 (`Doctor_Id`, `Doctor_name`, `Year`, `Month`, `Date`, `start_time`, `Leave_time`, `specialist`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-           
-            PreparedStatement pst = con.prepareStatement(query);
-            pst.setString(1, doctorId);   
-            pst.setString(2, docName);    
-            pst.setString(3, year);       
-            pst.setString(4, month);      
-            pst.setString(5, day);        
-            pst.setString(6, startTime);  
-            pst.setString(7, leaveTime);  
-            pst.setString(8, specialist);
+            controller.SlotsController ctrl = new controller.SlotsController();
+            boolean success = ctrl.saveTime(doctorId, docName, year, month, day, startTime, leaveTime, specialist);
             
-            pst.executeUpdate();
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-           model.addRow(new Object[] { doctorId, docName, year, month, day, startTime, leaveTime, specialist });
-            JOptionPane.showMessageDialog(this, "Doctor time uploaded and saved successfully!");
-            
-        }
-       
+           if(success) {
+                javax.swing.table.DefaultTableModel model = (javax.swing.table.DefaultTableModel) jTable1.getModel();
+                model.addRow(new Object[] { doctorId, docName, year, month, day, startTime, leaveTime, specialist });
+                javax.swing.JOptionPane.showMessageDialog(this, "Doctor time uploaded and saved successfully!");
+            } else {
+                javax.swing.JOptionPane.showMessageDialog(this, "Error in saving data!");
+            }
+        } 
        catch(Exception e)
        {
-           JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
-
-       }
+            javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+        }
+        
+       
+       
        
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -548,33 +570,32 @@ public class slots extends javax.swing.JFrame {
                     String leaveTime = jComboBox6.getSelectedItem().toString();
                     String specialist = jComboBox7.getSelectedItem().toString();
                     
-                   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-                   
-                   String query = "UPDATE doctor_time_table1 SET `Doctor_name`=?, `Year`=?, `Month`=?, `Date`=?, `start_time`=?, `Leave_time`=?, `specialist`=? WHERE `Doctor_Id`=?";
-    
-                    PreparedStatement pst = con.prepareStatement(query);
-                    pst.setString(1, docName);
-                    pst.setString(2, year);
-                    pst.setString(3, month);
-                    pst.setString(4, day);
-                    pst.setString(5, startTime);
-                    pst.setString(6, leaveTime);
-                    pst.setString(7, specialist);
-                    pst.setString(8, doctorId);
-
-                    pst.executeUpdate();
-                    JOptionPane.showMessageDialog(this, "Doctor time updated successfully!");
-                    con.close();
-           }
+                  controller.SlotsController ctrl = new controller.SlotsController();
+                  boolean success = ctrl.updateTime(doctorId, docName, year, month, day, startTime, leaveTime, specialist);
+            
+                   if(success)
+                   {
+                        javax.swing.JOptionPane.showMessageDialog(this, "Doctor time updated successfully!");
+                    } 
+                   else 
+                   {
+                        javax.swing.JOptionPane.showMessageDialog(this, "Error in updating data!");
+                    }
+        } 
            catch(Exception e)
            {
-               JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
-
+                javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
            }
             
             
             
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openHome();
+        this.dispose();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -617,6 +638,7 @@ public class slots extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton8;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -626,6 +648,7 @@ public class slots extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -637,6 +660,7 @@ public class slots extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;

@@ -1,4 +1,4 @@
-package com.petcare;
+package view;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -201,33 +201,33 @@ public class Doctor extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        this.setVisible(false);
-        home1 h1 = new home1 ();
-        h1.setVisible(true);
+        controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-         slots s = new slots();
-       s.setVisible(true);
-       this.setVisible(false);
+        controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openSlots();
+        this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-       pets_search ps = new pets_search();
-       ps.setVisible(true);
-       this.setVisible(false);
+    controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openPetSearch();
+        this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        doctorReports dr = new doctorReports();
-       dr.setVisible(true);
-       this.setVisible(false);
+      controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openDoctorReports();
+        this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-      home1 h1 = new home1();
-      h1.setVisible(true);
-      this.setVisible(false);
+     controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openHome();
+        this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     /**

@@ -1,4 +1,4 @@
-package com.petcare;
+package view;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -6,6 +6,7 @@ package com.petcare;
  */
 
 
+import view.Manager;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -41,6 +42,9 @@ public class TimeFrame extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,45 +152,88 @@ public class TimeFrame extends javax.swing.JFrame {
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
+        jPanel4.setBackground(new java.awt.Color(204, 0, 102));
+
+        jLabel12.setFont(new java.awt.Font("Perpetua Titling MT", 1, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("PET CARE AND VETERINARY SERVICES SECTOR");
+
+        jButton7.setBackground(new java.awt.Color(219, 36, 100));
+        jButton7.setFont(new java.awt.Font("Constantia", 1, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("LogOut");
+        jButton7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 4));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(76, 76, 76)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(135, 135, 135))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(215, 215, 215)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(53, 53, 53)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(141, 141, 141)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(47, 47, 47)
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(61, 61, 61)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 674, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 784, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(51, 51, 51)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton4)
                     .addComponent(jButton2))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -197,7 +244,7 @@ public class TimeFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -205,8 +252,8 @@ public class TimeFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
-        Manager m = new Manager ();
-        m.setVisible(true);
+        controller.TimeFrameController ctrl = new controller.TimeFrameController();
+        ctrl.openManager();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -215,14 +262,10 @@ public class TimeFrame extends javax.swing.JFrame {
 
         try
         {
-            // Database Connection
-            java.sql.Connection con = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
+            controller.TimeFrameController ctrl = new controller.TimeFrameController();
+            java.sql.ResultSet rs = ctrl.loadAllData();
 
-            String sql = "SELECT * FROM doctor_time_table1 ";
-            java.sql.PreparedStatement pst = con.prepareStatement(sql);
-            java.sql.ResultSet rs = pst.executeQuery();
-
-            while (rs.next()) {
+            while (rs != null && rs.next()) {
                 String id = rs.getString("Doctor_Id");
                 String name = rs.getString("Doctor_name");
                 String year = rs.getString("Year");
@@ -232,16 +275,13 @@ public class TimeFrame extends javax.swing.JFrame {
                 String leaveTime = rs.getString("Leave_time");
                 String specialist = rs.getString("specialist");
 
-                Object[] row = {id, name, year, month, date, startTime, leaveTime,specialist};
+                Object[] row = {id, name, year, month, date, startTime, leaveTime, specialist};
                 model.addRow(row);
             }
-
-            con.close();
-
         }
         catch(Exception e )
         {
-            javax.swing.JOptionPane.showMessageDialog(this, "Database Error: " + e.getMessage());
+            javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
         }
 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -250,33 +290,27 @@ public class TimeFrame extends javax.swing.JFrame {
 
         try
         {
-            String doctorName = jComboBox1.getSelectedItem().toString();
+                String doctorName = jComboBox1.getSelectedItem().toString();
 
-            if(doctorName.isEmpty())
-            {
-                JOptionPane.showMessageDialog(this, "Please enter or select a Doctor ID to delete!");
-                return;
-            }
+                if(doctorName.isEmpty())
+                {
+                    JOptionPane.showMessageDialog(this, "Please enter or select a Doctor ID to delete!");
+                    return;
+                }
 
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-            String query = "DELETE FROM doctor_time_table1 WHERE `Doctor_Id`=?";
+               controller.TimeFrameController ctrl = new controller.TimeFrameController();
+                boolean success = ctrl.deleteData(doctorName);
 
-            PreparedStatement pst = con.prepareStatement(query);
-            pst.setString(1, doctorName);
-
-            int rowsDeleted = pst.executeUpdate();
-
-            if(rowsDeleted > 0)
-            {
-                JOptionPane.showMessageDialog(this, "Doctor time deleted successfully from Database!");
-
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                model.setRowCount(0);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(this, "No record found with this Doctor ID!");
-            }
+                if(success) 
+                {
+                    JOptionPane.showMessageDialog(this, "Doctor time deleted successfully!");
+                    javax.swing.table.DefaultTableModel model = (javax.swing.table.DefaultTableModel) jTable1.getModel();
+                    model.setRowCount(0);
+                } 
+                else 
+                {
+                    JOptionPane.showMessageDialog(this, "No record found!");
+                }
         }
         catch(Exception e)
         {
@@ -288,20 +322,16 @@ public class TimeFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          try
          {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-             
-            String DoctorName = jComboBox1.getSelectedItem().toString(); 
-             
-            String sql = "SELECT * FROM doctor_time_table1 WHERE doctor_name = ?"; 
-            PreparedStatement pst = con.prepareStatement(sql);
-            pst.setString(1, DoctorName);
-            ResultSet rs = pst.executeQuery();
-            
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel(); 
-            model.setRowCount(0);
-            
-            while (rs.next()) {
-            String Doctor_id = rs.getString("Doctor_id");
+            String DoctorName = jComboBox1.getSelectedItem().toString();  
+        
+        controller.TimeFrameController ctrl = new controller.TimeFrameController();
+        java.sql.ResultSet rs = ctrl.searchByDoctor(DoctorName);
+        
+        javax.swing.table.DefaultTableModel model = (javax.swing.table.DefaultTableModel) jTable1.getModel(); 
+        model.setRowCount(0);
+        
+        while (rs != null && rs.next()) {
+            String Doctor_id = rs.getString("Doctor_Id");
             String Doctor_name = rs.getString("Doctor_name");
             String Year = rs.getString("Year");
             String Month = rs.getString("Month");
@@ -311,17 +341,20 @@ public class TimeFrame extends javax.swing.JFrame {
             String specialist = rs.getString("specialist");
             
             model.addRow(new Object[]{Doctor_id, Doctor_name, Year, Month, Date, start_time, Leave_time, specialist});
-            
-         }
-         }
-         catch (Exception e)
-         {
-            JOptionPane.showMessageDialog(this, "Error: " + e.getMessage()); 
-         }
+        }
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(this, "Error: " + e.getMessage()); 
+    }
             
             
             
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        controller.DoctorController ctrl = new controller.DoctorController();
+        ctrl.openHome();
+        this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -363,11 +396,14 @@ public class TimeFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton7;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
