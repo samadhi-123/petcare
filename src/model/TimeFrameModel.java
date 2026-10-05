@@ -40,7 +40,7 @@ public class TimeFrameModel {
     public boolean deleteTimeFrame(String doctorId) {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/petcare_db", "root", "");
-            String query = "DELETE FROM doctor_time_table1 WHERE `Doctor_Id` = ?";
+            String query = "DELETE FROM doctor_time_table1 WHERE doctor_name = ?";
             PreparedStatement pst = con.prepareStatement(query);
             pst.setString(1, doctorId);
             
