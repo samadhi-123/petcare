@@ -28,6 +28,7 @@ public class pets_search extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -321,6 +322,7 @@ public class pets_search extends javax.swing.JFrame {
         jLabel10.setText("Gender");
 
         jRadioButton2.setBackground(new java.awt.Color(204, 0, 102));
+        buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Constantia", 1, 14)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setText("Female");
@@ -331,6 +333,7 @@ public class pets_search extends javax.swing.JFrame {
         });
 
         jRadioButton1.setBackground(new java.awt.Color(204, 0, 102));
+        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setText("Male");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -554,7 +557,7 @@ public class pets_search extends javax.swing.JFrame {
         while (rs != null && rs.next()) {
             String OwnerId = rs.getString("OwnerId");
             String ownerName = rs.getString("ownerName");
-            int OwnerTel = rs.getInt("OwnerTel");
+            long OwnerTel = rs.getLong("OwnerTel");
             String PetName = rs.getString("PetName");
             int PetAge = rs.getInt("PetAge");
             String Gender = rs.getString("Gender");
@@ -797,6 +800,7 @@ public class pets_search extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
