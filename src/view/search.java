@@ -444,7 +444,7 @@ public class search extends javax.swing.JFrame {
             {
                 String OwnerId = rs.getString("OwnerId");
                 String ownerName = rs.getString("ownerName");
-                int OwnerTel = rs.getInt("OwnerTel");
+                long OwnerTel = rs.getLong("OwnerTel");
                 String PetName = rs.getString("PetName");
                 int PetAge = rs.getInt("PetAge");
                 String Gender = rs.getString("Gender");
